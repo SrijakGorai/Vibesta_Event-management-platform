@@ -1,5 +1,8 @@
-## Features
+# Vibesta 🎉
 
+Vibesta is a full-stack **Event Management System** built with **React (Vite + Material UI)** for the frontend and **Spring Boot** for the backend. Users can browse, book, and give feedback on events, while admins can manage events, view bookings, and manage feedback. The platform supports **JWT-based authentication**, **role-based routing**, and **light/dark themes**.
+
+## Features
 ### User Features
 - Browse available events in a horizontal scrollable card layout.  
 - Book tickets for events with max tickets per user restriction.  
@@ -39,59 +42,5 @@
 - Responsive design (mobile-friendly)  
 - Horizontal scrollable cards for events  
 
-## Project Structure
-
-### Frontend 
-src/
-├─ components/
-│ ├─ Navbar.jsx
-│ ├─ ThemeToggle.jsx
-│ ├─ BookEvent.jsx
-├─ pages/
-│ ├─ Home.jsx
-│ ├─ EventList.jsx
-│ ├─ AdminEvents.jsx
-│ ├─ auth/
-│ ├─ Login.jsx
-│ ├─ Register.jsx
-├─ services/
-│ ├─ api.js
-│ ├─ auth.js
-├─ theme/
-│ ├─ theme.js
-│ ├─ ThemeProvider.jsx
-├─ App.jsx
-├─ main.jsx
 
 
-
-### Backend (`src/main/java/com/vibesta`)
-com.vibesta/
-├─ config/
-│ ├─ SecurityConfig.java
-│ ├─ JwtFilter.java
-├─ controller/
-│ ├─ AuthController.java
-│ ├─ EventController.java
-│ ├─ FeedbackController.java
-├─ model/
-│ ├─ User.java
-│ ├─ Event.java
-│ ├─ Feedback.java
-│ ├─ AuthRequest.java
-├─ repository/
-│ ├─ UserRepository.java
-│ ├─ EventRepository.java
-│ ├─ FeedbackRepository.java
-├─ service/
-│ ├─ UserService.java
-│ ├─ EventService.java
-│ ├─ FeedbackService.java
-│ ├─ MyUserDetailsService.java
-│ ├─ MyUserDetails.java
-├─ util/
-│ ├─ JwtUtil.java
-└─ VibestaApplication.java
-
-yaml
-Copy code
